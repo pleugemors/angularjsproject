@@ -1,0 +1,17 @@
+<p>Please choose a category to limit the number displayed: </p>
+
+<p>Choose a category: </p>
+<select (change)="filterItems($event)">
+    <option>Category</option>
+    <option value="electronics">Electronics</option>
+    <option value="furniture">Furniture</option>
+    <option value="games">Games</option>
+    <option value="sports">Sports</option>
+</select>
+
+<div [ngClass]="{favorite:i.favorite}" *ngFor="let i of products">
+    <h4><span>{{i.id}}</span> {{i.title}} </h4>
+    <p>Price: {{i.price}} Category: {{i.category}}</p>
+    <button (click)="setFavorite(i)">Favorite</button>
+    <button (click)="addToCart(i)">Add to Cart</button>
+</div>

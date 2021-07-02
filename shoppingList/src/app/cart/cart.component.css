@@ -1,0 +1,22 @@
+span {
+    background-color: blue;
+    font-weight: bold;
+    width: 20 px;
+    height: 20 px;
+    border: solid;
+    color: white;
+    border-color: black;
+}
+
+div {
+    font-size: 16px;
+    font-weight: bold;
+    border: solid;
+    width:400px;
+}
+
+p {
+    font-weight: bold;
+    color: red
+}
+

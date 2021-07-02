@@ -1,0 +1,13 @@
+.favorite{
+    background-color: #BEA
+}
+
+span {
+    background-color: blue;
+    font-weight: bold;
+    width: 20 px;
+    height: 20 px;
+    border: solid;
+    color: white;
+    border-color: black;
+}

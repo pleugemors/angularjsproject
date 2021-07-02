@@ -1,0 +1,9 @@
+<h4>Inventory</h4>
+<div *ngFor="let i of items"><span>{{i.id}}</span> {{i.title}}<br/>
+    <span class="total">Price: {{i.price}}
+    <button (click)="decrementQuantity(i)">&lt;</button> Quantity: {{i.quantity}}
+    <button (click)="incrementQuantity(i)">&gt;</button> Total: {{i.price*i.quantity}}
+    <button (click)="removeItem(i)">Remove</button></span>
+</div>
+
+<p> Total = {{totalCost}}</p>
